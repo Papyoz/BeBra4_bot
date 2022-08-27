@@ -17,7 +17,7 @@ public class BeBra4_bot extends TelegramLongPollingBot {
         if(update.getMessage()!=null && update.getMessage().hasText()) {
             long chat_id= update.getMessage().getChatId();
             try{
-                execute(new SendMessage(chat_id,update.getMessage().getText() +text:"Hello"));
+                execute(new SendMessage(chat_id,"Привет"+ update.getMessage().getText()));
             } catch (TelegramApiException e){
                 e.printStackTrace();
             }

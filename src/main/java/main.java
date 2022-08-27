@@ -13,10 +13,10 @@ public class main {
         botOptions.setProxyPort(9150);
 
         BeBra4_bot beBra4_bot =new BeBra4_bot(botOptions);
-        TelegramBotsApi bostApi=new TelegramBotsApi();
+        TelegramBotsApi botsApi=new TelegramBotsApi();
 
         try{
-            bostApi.registerBot(BeBra4_bot);
+            botsApi.registerBot(BeBra4_bot);
         }
         catch (Exception e){
             e.printStackTrace();
